@@ -1,14 +1,12 @@
-Address Geocoder Streamlit App
+Reverse Lookup to Geocode Addresses from geocoordinate pairs
 
-This is a simple Streamlit web application designed to geocode addresses from CSV or GeoJSON files into latitude and longitude coordinates. It utilizes the OpenStreetMap Nominatim service for geocoding.
+This is a simple Streamlit web application designed to geocode addresses from CSV files or lists of latitude and longitude coordinates. It utilizes the OpenStreetMap Nominatim service for geocoding.
 Features
 
-    Input Formats: Accepts CSV files (with an 'address' column) and GeoJSON FeatureCollections (where each feature's properties contain an 'address' key).
+    Input Formats: Accepts CSV files (with an 'WKT' column) or lat/lon pairs. Users may also enter coordinate lists separated with a             semicolon, alternatively single location coordinate pairs maybe entered.
 
-    Geocoding: Converts addresses to geographic coordinates (latitude and longitude).
+    Geocoding: Converts geographic coordinates (latitude and longitude) to addresses.
 
-    Output Formats: Provides options to download the geocoded data as CSV or GeoJSON.
+    Output Formats: Provides options to download the address data as CSV.
 
-    Rate Limiting: Includes a rate limiter to respect the usage policy of the Nominatim service.
-
-    User Feedback: Displays progress and status messages during the geocoding process.
+    User Feedback: Displays progress and status messages during the process and in results.
